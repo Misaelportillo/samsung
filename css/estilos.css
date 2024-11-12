@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fefefe;
+}
+
+.header {
+    background: linear-gradient(135deg, #f72585, #7209b7);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px #222;
+}
+
+.header p {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    background-color: #ffdd00;
+    color: #333;
+    padding: 15px 50px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 221, 0, 0.5);
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #fbc02d;
+}
+
+.carousel {
+    padding: 50px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.carousel h2 {
+    font-size: 2.8em;
+    color: #ffdd00;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.features {
+    background: linear-gradient(135deg, #ff0054, #ff8c00);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.8em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    display: inline-block;
+    width: 30%;
+    margin: 20px 1%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #fff;
+}
+
+.feature-item h3 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1.1em;
+}
+
+.feature-icon {
+    font-size: 2.5em;
+    color: #ffdd00;
+    margin-bottom: 15px;
+}
+
+.purchase {
+    background: linear-gradient(135deg, #9c27b0, #673ab7);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.purchase h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.purchase p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #111;
+    color: #bbb;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+

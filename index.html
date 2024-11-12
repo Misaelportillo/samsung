@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Galaxy S23 Ultra - Explora el Futuro</title>
+    <link rel="stylesheet" href="css\estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Samsung Galaxy S23 Ultra</h1>
+            <p>¡Prepárate para el futuro! Con una cámara increíble, una pantalla sorprendente y rendimiento alucinante, el Galaxy S23 Ultra lo tiene todo para los que quieren más.</p>
+            <a href="#compra" class="cta-btn">¡Compra ahora y vive la experiencia!</a>
+        </div>
+    </header>
+
+    <section class="carousel" id="carousel">
+        <h2>Descubre el Galaxy S23 Ultra</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="img\celular.jpg" alt="Vista frontal del Samsung Galaxy S23 Ultra">
+            </div>
+            <div class="carousel-slide">
+                <img src="img\celular2.jpg" alt="Vista trasera del Samsung Galaxy S23 Ultra">
+            </div>
+            <div class="carousel-slide">
+                <img src="img\celular3.jpg" alt="Samsung Galaxy S23 Ultra en acción nocturna">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Características que te Volarán la Mente</h2>
+        <div class="feature-item">
+            <i class="fas fa-camera-retro feature-icon"></i>
+            <h3>Cámara de 200 MP</h3>
+            <p>¡Detalles al máximo! La cámara de 200 MP captura cada detalle de día o de noche. Desde paisajes espectaculares hasta selfies épicos, obtén fotos de calidad profesional al instante.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-mobile-alt feature-icon"></i>
+            <h3>Pantalla Dynamic AMOLED 2X</h3>
+            <p>Sumérgete en un mundo de colores vibrantes y negros profundos. La pantalla de 6.8 pulgadas ofrece una experiencia visual de otro nivel, perfecta para juegos y videos en alta definición.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-pen feature-icon"></i>
+            <h3>S Pen Integrado</h3>
+            <p>Libera tu creatividad con el S Pen, ¡como si tuvieras una libreta digital! Dibuja, toma notas y personaliza cada detalle con precisión. ¡Ideal para los que aman la creatividad sin límites!</p>
+        </div>
+    </section>
+
+    <section class="purchase" id="compra">
+        <h2>¡No te Quedes Atrás!</h2>
+        <p>Aprovecha el poder del Samsung Galaxy S23 Ultra y lleva tu experiencia digital al próximo nivel. ¡Compra ya!</p>
+        <a href="#" class="cta-btn">¡Quiero el Galaxy S23 Ultra!</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Samsung - Vive la tecnología al máximo.</p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".carousel-slide");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? "block" : "none";
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 3000);
+        showSlide(currentIndex);
+    </script>
+</body>
+</html>
